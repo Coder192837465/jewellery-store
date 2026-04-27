@@ -1,21 +1,66 @@
-<<<<<<< HEAD
-# jewellery-store
-My project is a jewelry e-commerce system that lets users browse and view gold and silver items while also calculating accurate prices using daily rates, purity, weight, jyala (making charges), stones, and VAT, similar to real jewelry shops in Nepal.
-=======
-# React + Vite
+# 💎 Jewelry E-Commerce & Pricing System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack jewelry web application built for managing and selling gold and silver items with a real-world pricing engine based on Nepal market standards.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🛍️ Product browsing (rings, necklaces, bracelets, etc.)
+- 🛒 Shopping cart system
+- 🔐 Authentication system (admin/user)
+- 📦 Order & billing history
+- 💰 Real-time jewelry price calculator
+- ⚖️ Supports gold/silver pricing with:
+  - Daily market rates
+  - Purity adjustment (24K, 22K, 18K)
+  - Net weight & wastage (jhutti)
+  - Making charges (jyala/jalti)
+  - Stone & design costs
+  - VAT calculation
+- 🧾 Admin dashboard for management
+- 📱 Responsive UI design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Pricing Logic
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> f2828e9 (initial commit)
+The system calculates final jewelry price using:
+
+**Final Price =**
+Metal Cost + Making Charges + Stone Cost + VAT
+
+Where:
+- Metal Cost = (Adjusted Rate × Net Weight) + Wastage
+- Making Charges = Per gram or percentage
+- VAT = 13% (Nepal standard)
+
+---
+
+## 🛠️ Tech Stack
+
+- React (Vite)
+- Context API (State Management)
+- JavaScript (ES6+)
+- CSS (Custom styling)
+- React Router DOM
+
+---
+
+---
+
+## ⚙️ Installation & Setup
+
+# Clone the repository
+git clone https://github.com/your-username/jewelry-store.git
+
+# Navigate to project folder
+cd jewelry-store
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+## 📁 Project Structure
